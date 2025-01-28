@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="css/styles1.css" />
+</head>
+<body>
+  <div class="clock-container">
+    <div id="clock">00:00:00</div>
+  </div>
+
+  <!-- Time Format Toggle -->
+  <div class="controls">
+    <label for="timeFormatSwitch">12-Hour Format:</label>
+    <input type="checkbox" id="timeFormatSwitch">
+  </div>
+
+  <!-- Customization Options -->
+  <div class="customizations">
+    <label for="colorPicker">Clock Color:</label>
+    <input type="color" id="colorPicker" />
+
+    <label for="fontSizeRange">Font Size:</label>
+    <input type="range" id="fontSizeRange" min="10" max="72" value="48" />
+  </div>
+
+  <!-- Alarm Section -->
+  <div class="alarm-section">
+    <h2>Set Alarm</h2>
+
+    <div>
+      <label for="alarmHour">Hour:</label>
+      <select id="alarmHour"></select>
+
+      <label for="alarmMinute">Minute:</label>
+      <select id="alarmMinute"></select>
+
+      <label for="alarmAmPm">AM/PM:</label>
+      <select id="alarmAmPm">
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+      </select>
+    </div>
+
+    <button id="setAlarmBtn">Set Alarm</button>
+    <button id="clearAlarmBtn">Clear Alarm</button>
+    <p id="alarmStatus">No alarm set</p>
+  </div>
+
+  <script src="js/script1.js"></script>
+</body>
+</html>

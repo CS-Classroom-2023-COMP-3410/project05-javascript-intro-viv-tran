@@ -1,0 +1,60 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 2rem;
+  }
+  
+  /* Clock Container */
+  .clock-container {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  #clock {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Controls & Customizations */
+  .controls,
+  .customizations,
+  .alarm-section {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    margin-right: 0.5rem;
+    font-weight: 600;
+  }
+  
+  #colorPicker {
+    margin-right: 1rem;
+  }
+  
+  #fontSizeRange {
+    width: 150px;
+  }
+  
+  /* Alarm Section */
+  .alarm-section h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .alarm-section select {
+    margin-right: 0.5rem;
+  }
+  
+  #alarmStatus {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #555;
+  }
+  

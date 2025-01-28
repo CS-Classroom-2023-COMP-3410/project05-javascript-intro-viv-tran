@@ -1,0 +1,24 @@
+<!-- Create a grid of cards that can be flipped to find matching pairs.
+Randomize the layout on each new game.
+Track and display the number of moves and the time taken to complete the game.
+Include a restart button to reset the game. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Matching Game</title>
+    <link rel="stylesheet" href="css/styles3.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Memory Matching Game 🧠</h1>
+        <p>Moves: <span id="move-count">0</span></p>
+        <p>Time: <span id="timer">0</span> sec</p>
+        <button onclick="restartGame()">Restart Game 🔄</button>
+        <div class="grid"></div>
+    </div>
+    <script src="js/script3.js"></script>
+</body>
+</html>

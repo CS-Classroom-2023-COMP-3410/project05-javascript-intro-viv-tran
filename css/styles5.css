@@ -1,0 +1,68 @@
+/* RESET / BASICS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* TOOLBAR (centered horizontally) */
+  .toolbar {
+    display: flex;
+    justify-content: center; /* center the items horizontally */
+    align-items: center;
+    flex-wrap: wrap;         /* allow wrapping if smaller screens */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Each control block in toolbar */
+  .tool {
+    margin-right: 20px;
+  }
+  
+  /* Spacing around label and inputs */
+  .tool label {
+    margin-right: 5px;
+  }
+  
+  /* Brush size display */
+  #brushSizeValue {
+    margin-left: 5px;
+    font-weight: bold;
+  }
+  
+  /* STYLE BUTTONS */
+  button {
+    margin-right: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  button:hover {
+    background-color: #777;
+  }
+  
+  /* CANVAS CONTAINER (centered in the page) */
+  .canvas-container {
+    display: flex;           /* use flex to center horizontally/vertically if needed */
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically (within the container) */
+    margin-top: 20px;        /* space from the toolbar */
+  }
+  
+  /* CANVAS STYLING (black border, centered) */
+  #drawingCanvas {
+    border: 2px solid #000;  /* black border */
+    background-color: #fff;
+    cursor: crosshair;
+  }
+  

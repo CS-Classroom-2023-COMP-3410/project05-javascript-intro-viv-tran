@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Trainer</title>
+    <link rel="stylesheet" href="css/styles10.css">
+</head>
+<body>
+    <div id="trainer-container">
+        <h1>Keyboard Trainer</h1>
+
+        <div id="settings">
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy (Short words, No special chars)</option>
+                <option value="medium" selected>Medium (Longer words, Some special chars)</option>
+                <option value="hard">Hard (Full sentences, Many special chars)</option>
+            </select>
+            <button id="start-button">Start</button>
+        </div>
+
+        <div id="trainer">
+            <p id="prompt-text"></p>
+            <input type="text" id="user-input" autocomplete="off">
+        </div>
+
+        <div id="stats">
+            <p><strong>Words Per Minute (WPM):</strong> <span id="wpm">0</span></p>
+            <p><strong>Accuracy:</strong> <span id="accuracy">100%</span></p>
+        </div>
+
+        <button id="restart-button">Restart</button>
+    </div>
+
+    <script src="js/script10.js"></script>
+</body>
+</html>

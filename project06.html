@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Periodic Table</title>
+    <link rel="stylesheet" href="css/styles6.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="search" placeholder="Search by name, symbol, or atomic number">
+        <div id="periodic-table" class="grid-container">
+            <!-- Full periodic table layout -->
+            <!-- Row 1 -->
+            <div class="element" data-number="1" data-symbol="H" data-name="Hydrogen" data-group="1" style="grid-column: 1; grid-row: 1;">H</div>
+            <div class="element" data-number="2" data-symbol="He" data-name="Helium" data-group="18" style="grid-column: 18; grid-row: 1;">He</div>
+            
+            <!-- Row 2 -->
+            <div class="element" data-number="3" data-symbol="Li" data-name="Lithium" data-group="1" style="grid-column: 1; grid-row: 2;">Li</div>
+            <div class="element" data-number="4" data-symbol="Be" data-name="Beryllium" data-group="2" style="grid-column: 2; grid-row: 2;">Be</div>
+            <div class="element" data-number="5" data-symbol="B" data-name="Boron" data-group="13" style="grid-column: 13; grid-row: 2;">B</div>
+            <div class="element" data-number="6" data-symbol="C" data-name="Carbon" data-group="14" style="grid-column: 14; grid-row: 2;">C</div>
+            <div class="element" data-number="7" data-symbol="N" data-name="Nitrogen" data-group="15" style="grid-column: 15; grid-row: 2;">N</div>
+            <div class="element" data-number="8" data-symbol="O" data-name="Oxygen" data-group="16" style="grid-column: 16; grid-row: 2;">O</div>
+            <div class="element" data-number="9" data-symbol="F" data-name="Fluorine" data-group="17" style="grid-column: 17; grid-row: 2;">F</div>
+            <div class="element" data-number="10" data-symbol="Ne" data-name="Neon" data-group="18" style="grid-column: 18; grid-row: 2;">Ne</div>
+            
+            <!-- Row 3 -->
+            <div class="element" data-number="11" data-symbol="Na" data-name="Sodium" data-group="1" style="grid-column: 1; grid-row: 3;">Na</div>
+            <div class="element" data-number="12" data-symbol="Mg" data-name="Magnesium" data-group="2" style="grid-column: 2; grid-row: 3;">Mg</div>
+            <div class="element" data-number="13" data-symbol="Al" data-name="Aluminum" data-group="13" style="grid-column: 13; grid-row: 3;">Al</div>
+            <div class="element" data-number="14" data-symbol="Si" data-name="Silicon" data-group="14" style="grid-column: 14; grid-row: 3;">Si</div>
+            <div class="element" data-number="15" data-symbol="P" data-name="Phosphorus" data-group="15" style="grid-column: 15; grid-row: 3;">P</div>
+            <div class="element" data-number="16" data-symbol="S" data-name="Sulfur" data-group="16" style="grid-column: 16; grid-row: 3;">S</div>
+            <div class="element" data-number="17" data-symbol="Cl" data-name="Chlorine" data-group="17" style="grid-column: 17; grid-row: 3;">Cl</div>
+            <div class="element" data-number="18" data-symbol="Ar" data-name="Argon" data-group="18" style="grid-column: 18; grid-row: 3;">Ar</div>
+            
+            <!-- Add all 118 elements in their correct positions -->
+            
+        </div>
+        <div id="element-info" class="hidden">
+            <h2 id="element-name"></h2>
+            <p><strong>Symbol:</strong> <span id="element-symbol"></span></p>
+            <p><strong>Atomic Number:</strong> <span id="element-number"></span></p>
+            <p><strong>Group:</strong> <span id="element-group"></span></p>
+        </div>
+    </div>
+    <script src="js/script6.js"></script>
+</body>
+</html>

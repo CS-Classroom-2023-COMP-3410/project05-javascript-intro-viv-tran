@@ -1,0 +1,32 @@
+<!-- Interactive To-Do List:
+
+Allow users to add, edit, delete, and reorder tasks.
+Mark tasks as completed and filter by status (all, completed, pending).
+Implement drag-and-drop functionality for reordering tasks.
+Persist tasks and statuses using localStorage. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do List</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="task-input">
+            <input type="text" id="new-task" placeholder="Add a new task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <div class="filters">
+            <button onclick="filterTasks('all')">All</button>
+            <button onclick="filterTasks('completed')">Completed</button>
+            <button onclick="filterTasks('pending')">Pending</button>
+        </div>
+        <ul id="task-list" class="task-list"></ul>
+    </div>
+    <script src="js/script2.js"></script>
+</body>
+</html>

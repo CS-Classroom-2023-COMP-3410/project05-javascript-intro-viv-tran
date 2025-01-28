@@ -1,0 +1,28 @@
+<!-- Present a set of predefined multiple-choice questions.
+Track the user’s score and provide feedback for each question.
+Display a summary of results at the end, including correct answers.
+Allow users to review their responses and correct answers. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz Game</title>
+    <link rel="stylesheet" href="css/styles4.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Trivia Quiz 🧠</h1>
+        <div id="question-container">
+            <p id="question-text"></p>
+            <ul id="answer-buttons"></ul>
+            <p id="feedback"></p>
+        </div>
+        <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+        <button id="restart-btn" onclick="restartQuiz()">Restart Quiz 🔄</button>
+        <div id="result-container"></div>
+    </div>
+    <script src="js/script4.js"></script>
+</body>
+</html>
